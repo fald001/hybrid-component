@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple=touch-icon" href="./images/pwa-512X512.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link type="favicon" sizes="16x16" rel="icon" href="./images/favicon.png">
+    <link rel="manifest" href="./manifest.json">
+    <title>Home Screen</title>
+
+</head>
+
+<body>
+    <header class="homePageHeader">
+
+        <form id="search-form">
+            <select name="sort">
+                <option value="release-date">Sort by: Release Date</option>
+                <option value="popularity">Sort by: Popularity</option>
+                <option value="vote">Sort by: Votes</option>
+            </select>
+            <div class="searchBar">
+                <input type="search" name="keyword" placeholder="Search results..." required>
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
+        <div class="favorites-btn">
+            <a href="./favorites.html"><i class="fa-solid fa-heart favCss"></i></a>
+        </div>
+    </header>
+    <main>
+        <h1>Movie Hub</h1>
+        <ul id="randomData"></ul>
+    </main>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
